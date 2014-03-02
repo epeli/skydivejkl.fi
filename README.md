@@ -16,17 +16,17 @@ After first run you can just use `make scss` to build CSS.
 
 ## Configuring the server
 
-Install [Ansible][a-install] and create a `hosts` file
-
 Create `server_conf/config.php`. Use `server_conf/config.php.example` as an
 example.
+
+[Install Ansible][a-install] and create a `hosts` file
 
 ```
 [server]
 xx.xx.xx.xx
 ```
 
-Where `xx.xx.xx.xx` is the ip address or hostane of the server.
+Where `xx.xx.xx.xx` is the ip address or hostname of the server.
 
 Then just execute the `server.yml` playbook using the `hosts` file.
 

@@ -30,9 +30,7 @@ Where `xx.xx.xx.xx` is the ip address or hostname of the server.
 
 Then just execute the `server.yml` playbook using the `hosts` file.
 
-    ansible-playbook -i hosts server.yml
-
-Use `--user`, `--ask-pass` and `--ask-sudo-pass` options as needed.
+    ansible-playbook -k -u root -i hosts server.yaml
 
 [Ansible]: http://www.ansible.com
 [Pico]: http://pico.dev7studios.com/

@@ -18,6 +18,9 @@ After first run you can just use `make scss` to build CSS.
 
 Install [Ansible][a-install] and create a `hosts` file
 
+Create `server_conf/config.php`. Use `server_conf/config.php.example` as an
+example.
+
 ```
 [server]
 xx.xx.xx.xx

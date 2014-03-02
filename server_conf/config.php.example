@@ -1,0 +1,8 @@
+<?php
+
+$config['site_title'] = 'Jyväskylän Laskuvarjokerho ry';
+$config['theme'] = 'skydivejkl';
+
+// Hashed password 'changeme' use http://skydivejkl.fi/_password to generate better one
+$config['aswyg_password'] = '$2a$12$CVbx4WA4rfzbEhfGCtNeFub/h6BBUYph1qOhmmmiCP4lVec2T.hM6';
+

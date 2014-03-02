@@ -28,9 +28,9 @@ xx.xx.xx.xx
 
 Where `xx.xx.xx.xx` is the ip address or hostname of the server.
 
-Then just execute the `server.yml` playbook using the `hosts` file.
+Then just execute the `pico.yaml` playbook using the `hosts` file.
 
-    ansible-playbook -k -u root -i hosts server.yaml
+    ansible-playbook -k -u root -i hosts pico.yaml
 
 [Ansible]: http://www.ansible.com
 [Pico]: http://pico.dev7studios.com/

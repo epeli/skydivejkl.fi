@@ -17,4 +17,7 @@ commit-theme: scss
 watch:
 	grunt
 
-
+clean:
+	rm -rf node_modules
+	rm -rf bower_components
+	rm -rf css

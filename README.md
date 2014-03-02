@@ -1,29 +1,36 @@
-# Foundation libsass template
 
-This is a template to start your own project that uses Grunt and libsass!
+# http://skydivejkl.fi
 
-## Requirements
+This repository contains a [Pico][] theme and [Ansible][] rules for a server
+setup.
 
-You'll need to have the following items installed before continuing.
+## Building the theme
 
-  * [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
-  * [Grunt](http://gruntjs.com/): Run `[sudo] npm install -g grunt-cli`
-  * [Bower](http://bower.io): Run `[sudo] npm install -g bower`
+Theme uses Foundatation and node-sass.
 
-## Quickstart
+Install node.js and GNU Make and run
 
-```bash
-git clone git@github.com:zurb/foundation-libsass-template.git
-npm install && bower install
+    make
+
+After first run you can just use `make scss` to build CSS.
+
+## Configuring the server
+
+Install [Ansible][a-install] and create a `hosts` file
+
+```
+[server]
+xx.xx.xx.xx
 ```
 
-While you're working on your project, run:
+Where `xx.xx.xx.xx` is the ip address or hostane of the server.
 
-`grunt`
+Then just execute the `server.yml` playbook using the `hosts` file.
 
-And you're set!
+    ansible-playbook -i hosts server.yml
 
-## Directory Strucutre
+Use `--user`, `--ask-pass` and `--ask-sudo-pass` options as needed.
 
-  * `scss/_settings.scss`: Foundation configuration settings go in here
-  * `scss/app.scss`: Application styles go here
+[Ansible]: http://www.ansible.com
+[Pico]: http://pico.dev7studios.com/
+[a-install]: http://docs.ansible.com/intro_installation.html

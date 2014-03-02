@@ -3,23 +3,18 @@ export PATH := node_modules/.bin:$(PATH)
 
 all:
 	npm install
+	bower install
 	$(MAKE) scss
 
+.PHONY: scss
 scss:
-	grunt
+	grunt sass
+
+commit-theme: scss
+	git add css
+	git commit css -m "Update assets"
 
 watch:
 	grunt
 
-deploy-lakka: scss
-	rsync -Pah \
-		--exclude '.git' \
-		--exclude 'node_modules' \
-		--delete \
-		../../ lakka:suuronen.org/jlk
 
-deploy: scss
-	rsync -Pah \
-		--exclude '.git' \
-		--exclude 'node_modules' \
-		../../ jlk:pico

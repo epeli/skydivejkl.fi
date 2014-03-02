@@ -3,7 +3,7 @@
   tasks:
 
   - name: Ensure python-apt
-    shell: apt-get update && apt-get install -y python-apt
+    shell: apt-get update && apt-get install -y python-apt rsync
 
   - name: Ensure apache is installed
     apt: pkg=apache2 state=latest
@@ -23,11 +23,13 @@
     git:
       repo: https://github.com/gilbitron/Pico.git
       dest: /var/skydivejkl
+      update: no
 
   - name: Install aswyg for Pico
     git:
       repo: https://github.com/epeli/pico-aswyg-editor-plugin.git
       dest: /var/skydivejkl/plugins/pico-aswyg-editor-plugin
+      update: no
 
   - name: Install pico_get_by_filename for Pico
     git:
@@ -47,10 +49,18 @@
     notify:
       - restart apache
 
+  - name: Copy Pico config
+    copy: src=server_conf/config.php dest=/var/skydivejkl/config.php
+    notify:
+      - restart apache
+
   - name: Copy skydivjkl.fi Apache config
     copy: src=server_conf/skydivejkl.fi dest=/etc/apache2/sites-enabled/skydivejkl.fi
     notify:
       - restart apache
+
+  - name: Install skydivejkl.fi Pico theme
+    synchronize: src=. dest=/var/skydivejkl/themes/skydivejkl delete=yes
 
   handlers:
 

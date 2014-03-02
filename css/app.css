@@ -5733,37 +5733,37 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
-/* line 8, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 7, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 a {
   color: #3b5998; }
-  /* line 10, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+  /* line 9, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   a:hover {
     color: #008cba; }
 
-/* line 15, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 14, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 html, p, .button, ul, li {
   font-family: 'Signika Negative';
   font-size: 1.1em;
   line-height: 1.9em;
   font-weight: 300; }
 
-/* line 22, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 21, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 h1, h2, h3, h4, .bgheader .button {
   font-family: 'Passion One', fantasy; }
 
-/* line 26, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 25, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 h3 {
   font-size: 2em; }
 
-/* line 30, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 29, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 #map-canvas {
   height: 100%; }
 
-/* line 31, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 30, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 .map {
   margin-top: 2em; }
 
-/* line 36, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 35, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 .right-off-canvas-menu a {
   font-family: 'Signika Negative';
   font-size: 1em;
@@ -5772,16 +5772,16 @@ h3 {
   width: 100%;
   text-transform: uppercase;
   text-align: left; }
-  /* line 44, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+  /* line 43, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   .right-off-canvas-menu a:hover {
     background-color: black;
     color: white; }
-/* line 49, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 48, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 .right-off-canvas-menu ul {
   margin-top: 1em;
   list-style: none; }
 
-/* line 55, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 54, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 .menu {
   display: block;
   position: absolute;
@@ -5794,22 +5794,20 @@ h3 {
   height: 2.5em;
   padding: 0px;
   font-weight: bold;
-  border: 4px solid white;
   z-index: 100;
   background-color: transparent; }
-  /* line 70, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+  /* line 68, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   .menu:hover {
     color: black;
-    border-color: black;
     background-color: transparent; }
-  /* line 75, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+  /* line 72, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   .menu span {
     position: relative;
     top: 0.1em;
     font-size: 1.6em;
     padding: 0em; }
 
-/* line 85, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 82, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 .bgheader {
   position: relative;
   background-image: url(../images/header-landing.jpg);
@@ -5818,49 +5816,37 @@ h3 {
   background-repeat: no-repeat;
   background-position: top center;
   -webkit-background-size: cover; }
-  /* line 94, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+  /* line 91, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   .bgheader .button {
     padding: 0.3em;
     padding-right: 0.5em;
     text-transform: uppercase;
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    border: 0px !important; }
 
-/* line 102, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 101, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 .links {
   position: absolute;
   bottom: 1em;
   font-size: 14pt; }
-  /* line 107, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+  /* line 106, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   .links a:hover {
     color: black; }
   /* line 111, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   .links .button {
     margin: 0;
-    background-color: transparent;
-    border-right: 0px; }
+    background-color: transparent; }
 
-/* line 120, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 119, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 .main-menu-sep {
   float: none; }
 
 @media only screen and (min-width:40.063em) {
-  /* line 125, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+  /* line 124, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   .main-menu-sep {
     display: none; } }
 
-/* line 130, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
-footer .button {
-  font-size: 12pt;
-  padding: 1em;
-  background-color: transparent;
-  border: 0px;
-  border: 1px solid transparent !important; }
-  /* line 136, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
-  footer .button:hover {
-    border-top: 1px solid white !important;
-    background-color: transparent; }
-
-/* line 144, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 131, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 .content img {
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
@@ -5875,50 +5861,50 @@ footer .button {
   box-sizing: border-box;
   border: white 0.5em solid; }
 
-/* line 161, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 148, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 .content {
   text-align: left; }
-  /* line 164, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+  /* line 151, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   .content .right {
     max-width: 45%;
     float: right;
     margin-right: 1em;
     margin-left: 1em; }
-  /* line 170, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+  /* line 157, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   .content .left {
     max-width: 45%;
     float: left;
     margin-right: 1em;
     margin-left: 1em; }
-  /* line 178, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+  /* line 165, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   .content .row {
     margin-top: 2em; }
-    /* line 180, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+    /* line 167, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
     .content .row .action-button {
       margin-top: 1em;
       margin-bottom: 1em; }
-    /* line 184, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+    /* line 171, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
     .content .row .button {
       display: block;
       width: 10em;
       background-color: #3b5998;
       color: white; }
-      /* line 190, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+      /* line 177, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
       .content .row .button:hover {
         background-color: #008cba; }
 
-/* line 200, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 187, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 .feed * {
   width: 99%; }
 
 @media only screen and (min-width:40.063em) and (max-width:64em) { }
 
-/* line 215, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 202, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 .logo {
   height: 4em;
   opacity: 0.7; }
 
-/* line 223, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+/* line 210, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 footer {
   margin-top: 5em;
   height: 30em;
@@ -5930,11 +5916,11 @@ footer {
   margin-left: 0px;
   color: white;
   background-color: black; }
-  /* line 235, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+  /* line 222, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   footer p {
     margin: 0px; }
 
 @media only screen and (min-width:40.063em) {
-  /* line 241, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+  /* line 228, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   footer {
     height: 20em; } }

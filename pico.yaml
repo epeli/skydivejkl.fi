@@ -29,7 +29,7 @@
     git:
       repo: https://github.com/epeli/pico-aswyg-editor-plugin.git
       dest: /var/skydivejkl/plugins/pico-aswyg-editor-plugin
-      update: no
+      update: yes
 
   - name: Install pico_get_by_filename for Pico
     git:

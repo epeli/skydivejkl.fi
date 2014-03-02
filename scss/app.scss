@@ -1,7 +1,6 @@
 @import "settings";
 @import "foundation";
 
-
 $link-color: #3b5998;
 $hover-color: #008cba;
 
@@ -64,12 +63,10 @@ h3 {
     height: 2.5em;
     padding: 0px;
     font-weight: bold;
-    border: 4px solid white;
     z-index: 100;
     background-color: transparent;
     &:hover {
         color: black;
-        border-color: black;
         background-color: transparent;
     }
     span {
@@ -96,7 +93,9 @@ h3 {
         padding-right: 0.5em;
         text-transform: uppercase;
         font-size: 1.3em;
+        border: 0px !important;
     }
+
 }
 
 .links {
@@ -108,10 +107,10 @@ h3 {
         color: black;
     }
 
+
     .button {
         margin: 0;
         background-color: transparent;
-        border-right: 0px;
     }
 }
 
@@ -127,18 +126,6 @@ h3 {
     }
 }
 
-footer .button {
-    font-size: 12pt;
-    padding: 1em;
-    background-color: transparent;
-    border: 0px;
-    border: 1px solid transparent !important;
-    &:hover {
-        border-top: 1px solid white !important;
-        background-color: transparent;
-    }
-
-}
 
 
 .content img {
@@ -243,45 +230,3 @@ footer {
     }
 }
 
-// @media #{$medium-only and $small-only} {
-//     * { color: green; }
-// }
-
-
-// Or selectively include components
-// @import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switch",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";

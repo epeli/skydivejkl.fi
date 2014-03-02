@@ -1,8 +1,15 @@
 <VirtualHost *:80>
+    ServerName www.skydivejkl.fi
+    Redirect permanent / http://skydivejkl.fi/
+</VirtualHost>
+
+<VirtualHost *:80>
   ServerName skydivejkl.fi
+  ServerAlias new.skydivejkl.fi
   ServerAdmin kerho@skydivejkl
 
   DocumentRoot /var/skydivejkl
+
   <Directory />
     Options FollowSymLinks
     AllowOverride All
@@ -15,12 +22,10 @@
     allow from all
   </Directory>
 
-  ErrorLog ${APACHE_LOG_DIR}/error.log
 
-  # Possible values include: debug, info, notice, warn, error, crit,
-  # alert, emerg.
-  LogLevel info
+</VirtualHost>
 
-  CustomLog ${APACHE_LOG_DIR}/access.log combined
-
+<VirtualHost *:80>
+    ServerName "*"
+    Redirect permanent / http://skydivejkl.fi/
 </VirtualHost>

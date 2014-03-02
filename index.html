@@ -1,0 +1,94 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Passion+One|Signika+Negative:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <title>Jyväskylän Laskuvarjokerho ry. - Skydive Jyväskylä - {{ meta.title }}</title>
+
+    <meta name="description" content="Jyväskylän laskuvarjokerho ry" />
+
+    <link rel="stylesheet" href="{{ theme_url }}/css/app.css" />
+    <script src="{{ theme_url }}/bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+
+    <div class="off-canvas-wrap">
+      <div class="inner-wrap">
+        <a class="exit-off-canvas"></a>
+
+        <!-- <a class="menu button right-off-canvas-toggle"> -->
+        <!--   <span href="#" > -->
+        <!--       &#9776; -->
+        <!--   </span> -->
+        <!-- </a> -->
+
+        <aside class="right-off-canvas-menu">
+          <ul class="left">
+            <li><a href="{{ base_url}}/kalenteri" class="button">Kalenteri</a></li>
+            <li><a href="{{ base_url}}/keli" class="button">Keli</a></li>
+            <li><a href="{{ base_url}}/Kiilarilistat" class="button">Kiilarilistat</a></li>
+            <li><a href="{{ base_url}}/webcam" class="button">Webcam</a></li>
+          </ul>
+        </aside>
+
+    <div class="bgheader">
+
+    <div class="row header">
+      <div class="columns">
+        <h1>
+          <a href="{{ base_url}}" title="Etusivulle">
+            <img class=logo src="{{ theme_url }}/images/logo.png" />
+          </a>
+        </h1>
+      </div>
+      <div class="columns links">
+        <ul class="left button-group">
+        <li><a href="{{ base_url}}" class="button">Etusivu</a></li>
+        <li><a href="{{ base_url}}/kurssit" class="button">Kurssit</a></li>
+        <li><a href="{{ base_url}}/hinnasto" class="button">Hinnasto</a></li>
+        <li><a href="{{ base_url}}/kerho" class="button">Kerho</a></li>
+        <li><a href="{{ base_url}}/in-english" class="button">In english</a></li>
+        <li><a href="#" class="button right-off-canvas-toggle">...</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+  <div class="content">
+
+
+  {% if is_front_page %}
+    {{ include('frontpage.html') }}
+  {% else %}
+    <div class="row">
+      <div class="column large-12">
+        {{ content }}
+      </div>
+    </div>
+  {% endif %}
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="large-6 columns">
+        {{ pages['footer_inc'].content }}
+      </div>
+    </div>
+  </footer>
+
+    </div>
+    </div>
+
+    <script src="{{ theme_url }}/bower_components/jquery/jquery.js"></script>
+    <script src="{{ theme_url }}/bower_components/foundation/js/foundation.js"></script>
+    <script>
+      $(document).foundation();
+
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
+  </body>
+</html>

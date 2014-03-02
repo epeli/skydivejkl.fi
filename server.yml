@@ -1,0 +1,60 @@
+- hosts: server
+  sudo: yes
+  tasks:
+
+  - name: Ensure python-apt
+    shell: apt-get update && apt-get install -y python-apt
+
+  - name: Ensure apache is installed
+    apt: pkg=apache2 state=latest
+
+  - name: Ensure php is installed for apache
+    apt: pkg=libapache2-mod-php5 state=latest
+
+  - name: Ensure git
+    apt: pkg=git state=latest
+
+  - name: Enable apache mod rewrite
+    shell: a2enmod rewrite
+    notify:
+      - restart apache
+
+  - name: Clone Pico
+    git:
+      repo: https://github.com/gilbitron/Pico.git
+      dest: /var/skydivejkl
+
+  - name: Install aswyg for Pico
+    git:
+      repo: https://github.com/epeli/pico-aswyg-editor-plugin.git
+      dest: /var/skydivejkl/plugins/pico-aswyg-editor-plugin
+
+  - name: Install pico_get_by_filename for Pico
+    git:
+      repo: https://github.com/james2doyle/pico_get_by_filename.git
+      dest: /var/skydivejkl/plugins/pico_get_by_filename
+
+  - name: Remove useless default apache site config
+    file: path=/etc/apache2/sites-enabled/000-default state=absent
+    notify:
+      - restart apache
+
+  - name: Ensure Apache can write Pico content
+    file: path=/var/skydivejkl/content owner=www-data group=www-data recurse=yes
+
+  - name: Copy php config for Apache
+    copy: src=server_conf/php.ini dest=/etc/php5/apache2/php.ini
+    notify:
+      - restart apache
+
+  - name: Copy skydivjkl.fi Apache config
+    copy: src=server_conf/skydivejkl.fi dest=/etc/apache2/sites-enabled/skydivejkl.fi
+    notify:
+      - restart apache
+
+  handlers:
+
+    - name: restart apache
+      service: name=apache2 state=restarted
+
+

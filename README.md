@@ -19,7 +19,7 @@ After first run you can just use `make scss` to build CSS.
 Create `server_conf/config.php`. Use `server_conf/config.php.example` as an
 example.
 
-[Install Ansible][a-install] and create a `hosts` file
+[Install Ansible][a-install] and create a `production` file
 
 ```
 [server]
@@ -28,9 +28,9 @@ xx.xx.xx.xx
 
 Where `xx.xx.xx.xx` is the ip address or hostname of the server.
 
-Then just execute the `pico.yaml` playbook using the `hosts` file.
+Then just execute the `pico.yaml` playbook using the `production` file.
 
-    ansible-playbook -k -u root -i hosts pico.yaml
+    ansible-playbook -k -u root -i production pico.yaml
 
 [Ansible]: http://www.ansible.com
 [Pico]: http://pico.dev7studios.com/

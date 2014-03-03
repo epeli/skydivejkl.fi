@@ -5924,3 +5924,20 @@ footer {
   /* line 228, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
   footer {
     height: 20em; } }
+
+/* line 233, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+.responsive-youtube {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0; }
+  /* line 241, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
+  .responsive-youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }

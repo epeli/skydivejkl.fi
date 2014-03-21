@@ -1,4 +1,3 @@
-
 # http://skydivejkl.fi
 
 This repository contains a [Pico][] theme and [Ansible][] rules for a server
@@ -6,7 +5,7 @@ setup.
 
 ## Building the theme
 
-Theme uses Foundatation and node-sass.
+Theme uses [Foundatation](http://foundation.zurb.com/) and [node-sass](https://github.com/andrew/node-sass).
 
 Install node.js and GNU Make and run
 

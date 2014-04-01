@@ -13,8 +13,8 @@ a {
 
 html, p, .button, ul, li {
     font-family: 'Signika Negative';
-    font-size: 1.1em;
-    line-height: 1.9em;
+    font-size: 12pt;
+    line-height: 2;
     font-weight: 300;
 }
 
@@ -82,7 +82,7 @@ h3 {
 .bgheader {
     position: relative;
     background-image: url(../images/header-landing.jpg);
-    height: 17em;
+    height: 18em;
     width: 100%;
     background-repeat: no-repeat;
     background-position: top center;
@@ -128,7 +128,7 @@ h3 {
 
 
 
-.content img {
+.content img, .responsive-youtube {
     // some copy paste from octropres...
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;

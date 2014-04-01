@@ -5743,8 +5743,8 @@ a {
 /* line 14, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
 html, p, .button, ul, li {
   font-family: 'Signika Negative';
-  font-size: 1.1em;
-  line-height: 1.9em;
+  font-size: 12pt;
+  line-height: 2;
   font-weight: 300; }
 
 /* line 21, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
@@ -5811,7 +5811,7 @@ h3 {
 .bgheader {
   position: relative;
   background-image: url(../images/header-landing.jpg);
-  height: 17em;
+  height: 18em;
   width: 100%;
   background-repeat: no-repeat;
   background-position: top center;
@@ -5847,7 +5847,7 @@ h3 {
     display: none; } }
 
 /* line 131, /home/epeli/code/skydivejkl.fi/themes/skydivejkl/scss/app.scss */
-.content img {
+.content img, .responsive-youtube {
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
   -ms-border-radius: 0.3em;

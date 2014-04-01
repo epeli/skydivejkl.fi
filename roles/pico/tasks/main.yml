@@ -34,6 +34,11 @@
   - name: Ensure www-data can write Pico content
     file: path=/var/skydivejkl/content owner=www-data group=www-data recurse=yes
 
+  - name: nginx config
+    copy: src=nginx.conf dest=/etc/nginx/nginx.conf
+    notify:
+      - restart nginx
+
   - name: nginx config for Pico
     copy: src=pico_nginx.conf dest=/etc/nginx/sites-enabled/10-pico
     notify:

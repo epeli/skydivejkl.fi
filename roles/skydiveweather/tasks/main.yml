@@ -20,14 +20,18 @@
   notify:
     - restart nginx
 
-- name: npm install
-  command: npm install chdir=/usr/local/lib/skydiveweather
+- name: build
+  command: make chdir=/usr/local/lib/skydiveweather
+  notify:
+    - restart skydiveweather
 
 - name: Copy upstart script
   copy: src=skydiveweather.upstart dest=/etc/init/skydiveweather.conf
 
 - name: Copy config
   copy: src=config.json dest=/usr/local/lib/skydiveweather/config.json
+  notify:
+    - restart skydiveweather
 
 - name: start skydiveweather
   service: name=skydiveweather state=started

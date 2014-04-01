@@ -1,5 +1,6 @@
-server_conf/config.php
 node_modules
 bower_components
 development
 production
+roles/pico/files/pico_config.php
+roles/skydiveweather/files/config.json

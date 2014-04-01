@@ -1,0 +1,11 @@
+description "skydiveweather"
+
+start on runlevel [23]
+stop on shutdown
+
+chdir /usr/local/lib/skydiveweather
+setuid www-data
+env NODE_ENV=production
+exec node server.js
+
+respawn

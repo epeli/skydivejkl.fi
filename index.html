@@ -85,11 +85,19 @@
 
     <script src="{{ theme_url }}/bower_components/jquery/dist/jquery.js"></script>
     <script src="{{ theme_url }}/bower_components/foundation/js/foundation.js"></script>
-    <script>
+    <script src="{{ theme_url }}/vendor/background-check.js"></script>
+    <script charset="utf-8">
       $(document).foundation();
 
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
+
+      BackgroundCheck.init({
+         targets: '.links ul',
+         images: '.bgheader'
+       });
+
+
     </script>
   </body>
 </html>

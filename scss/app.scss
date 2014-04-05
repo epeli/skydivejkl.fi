@@ -96,6 +96,7 @@ h3 {
         border: 0px !important;
     }
 
+
 }
 
 .links {
@@ -103,8 +104,17 @@ h3 {
     bottom: 1em;
     font-size: 14pt;
 
+    a {
+        color: white;
+    }
     a:hover {
         color: black;
+    }
+
+    // With BackgroundCheck http://www.kennethcachia.com/background-check/index.html
+    .background--light {
+        background-color: rgba(0, 0, 0, 0.29);
+        border-radius: 10px;
     }
 
 

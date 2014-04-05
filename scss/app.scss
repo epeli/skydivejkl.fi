@@ -40,6 +40,10 @@ h3 {
         width: 100%;
         text-transform: uppercase;
         text-align: left;
+        font-size: 0.8em;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        margin-bottom: 0.8em;
         &:hover {
             background-color: black;
             color: white;
@@ -48,7 +52,12 @@ h3 {
     ul {
         margin-top: 1em;
         list-style: none;
+        width: 100%;
     }
+}
+
+a.exit-off-canvas {
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .menu {

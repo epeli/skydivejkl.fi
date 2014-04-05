@@ -14,8 +14,8 @@ scss-watch:
 	node-sass --watch --include-path bower_components/foundation/scss --source-comments map  --source-map -o css/app.css scss/app.scss
 
 commit-theme: scss
-	git add css -f
-	git commit css -m "Update assets"
+	git add css bower_components -f
+	git commit css bower_components -m "Update assets"
 
 watch:
 	grunt

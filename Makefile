@@ -8,7 +8,10 @@ all:
 
 .PHONY: scss
 scss:
-	grunt sass
+	node-sass --include-path bower_components/foundation/scss --source-comments map  --source-map -o css/app.css scss/app.scss
+
+scss-watch:
+	node-sass --watch --include-path bower_components/foundation/scss --source-comments map  --source-map -o css/app.css scss/app.scss
 
 commit-theme: scss
 	git add css

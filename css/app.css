@@ -4510,6 +4510,14 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
+body {
+  background-color: #8D8D8D; }
+
+.page-box {
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 20px black; }
+
 a {
   color: #3b5998; }
   a:hover {
@@ -4586,7 +4594,9 @@ a.exit-off-canvas {
   width: 100%;
   background-repeat: no-repeat;
   background-position: top center;
-  -webkit-background-size: cover; }
+  -webkit-background-size: cover;
+  max-width: 1100px;
+  margin: 0 auto; }
   .bgheader .button {
     padding: 0.3em;
     padding-right: 0.5em;
@@ -4631,7 +4641,13 @@ a.exit-off-canvas {
   border: #fff 0.5em solid; }
 
 .content {
-  text-align: left; }
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  max-width: 1100px;
+  padding-top: 2em;
+  padding-bottom: 2em; }
   .content .right {
     max-width: 45%;
     float: right;
@@ -4642,18 +4658,16 @@ a.exit-off-canvas {
     float: left;
     margin-right: 1em;
     margin-left: 1em; }
-  .content .row {
-    margin-top: 2em; }
-    .content .row .action-button {
-      margin-top: 1em;
-      margin-bottom: 1em; }
-    .content .row .button {
-      display: block;
-      width: 10em;
-      background-color: #3b5998;
-      color: white; }
-      .content .row .button:hover {
-        background-color: #008cba; }
+  .content .row .action-button {
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .content .row .button {
+    display: block;
+    width: 10em;
+    background-color: #3b5998;
+    color: white; }
+    .content .row .button:hover {
+      background-color: #008cba; }
 
 .feed * {
   width: 99%; }
@@ -4665,7 +4679,6 @@ a.exit-off-canvas {
   opacity: 0.7; }
 
 footer {
-  margin-top: 5em;
   height: 30em;
   width: 100% !important;
   padding-top: 4em;
@@ -4677,6 +4690,19 @@ footer {
   background-color: black; }
   footer p {
     margin: 0px; }
+  footer ul {
+    list-style: none; }
+    footer ul li {
+      float: left; }
+    footer ul li a {
+      font-family: 'Passion One', fantasy;
+      color: white;
+      padding: 0.3em;
+      padding-right: 0.5em;
+      text-transform: uppercase;
+      font-size: 1.3em; }
+      footer ul li a:hover {
+        color: gray; }
 
 @media only screen and (min-width:40.063em) {
   footer {

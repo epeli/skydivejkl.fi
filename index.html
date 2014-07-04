@@ -36,8 +36,8 @@
           </ul>
         </aside>
 
+    <div class="page-box">
     <div class="bgheader">
-
     <div class="row header">
       <div class="columns">
         <h1>
@@ -53,7 +53,8 @@
         <li><a href="{{ base_url}}/hinnasto" class="button">Hinnasto</a></li>
         <li><a href="{{ base_url}}/yhteystiedot" class="button">Yhteystiedot</a></li>
         <li><a href="{{ base_url}}/in-english" class="button">In english</a></li>
-        <li><a href="#" class="button right-off-canvas-toggle">...</a></li>
+        <!-- <li><a href="#" class="button right-off-canvas-toggle">...</a></li> -->
+        <li><a href="#footer" class="button" title="Alalaita">...</a></li>
         </ul>
       </div>
     </div>
@@ -72,14 +73,15 @@
     </div>
   {% endif %}
   </div>
-
-  <footer>
+  <footer id="footer">
     <div class="row">
       <div class="large-6 columns">
         {{ pages['_footer'].content }}
       </div>
     </div>
   </footer>
+  </div>
+
 
     </div>
     </div>

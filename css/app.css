@@ -2735,7 +2735,11 @@ dialog[open] {
 
 @media print {
   dialog, .reveal-modal {
-    background: #fff !important; } }
+    background: #fff !important; } 
+.links,#footer,.header,.bgheader { display: none;}
+.right-off-canvas-menu { display: none;}
+
+}
 
 .side-nav {
   display: block;

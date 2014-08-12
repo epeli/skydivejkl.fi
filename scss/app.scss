@@ -124,6 +124,7 @@ a.exit-off-canvas {
 
 
 .links {
+    width: auto;
     position: absolute;
     bottom: 1em;
     font-size: 14pt;
@@ -134,6 +135,7 @@ a.exit-off-canvas {
     a:hover {
         color: black;
     }
+
 
     // With BackgroundCheck http://www.kennethcachia.com/background-check/index.html
     .background--light {

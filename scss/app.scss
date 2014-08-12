@@ -12,8 +12,10 @@ body {
 
 .page-box {
     max-width: $content-width;
+    background-color: black;
     margin: 0 auto;
     box-shadow: 0px 0px 20px black;
+    height: 100%;
 }
 
 a {
@@ -237,9 +239,10 @@ a.exit-off-canvas {
 }
 
 footer {
-    height: 30em;
     width: 100% !important;
     padding-top: 4em;
+    padding-left: 2em;
+    padding-bottom: 4em;
 
     font-size: small;
     width: 100%;
@@ -247,23 +250,28 @@ footer {
     margin-left: 0px;
     color: white;
     background-color: black;
+
+    h1 {
+        color: white;
+        text-transform:uppercase;
+        font-size: 18pt;
+    }
+
+    .column {
+        padding-left: 1em !important;
+        margin-bottom: 2em;
+    }
+
     p {
         margin: 0px;
     }
 
     ul {
         list-style: none;
-        li {
-            float: left;
-        }
+        margin: 0px;
 
         li a {
-            font-family: 'Passion One', fantasy;
             color: white;
-            padding: 0.3em;
-            padding-right: 0.5em;
-            text-transform: uppercase;
-            font-size: 1.3em;
             &:hover {
                 color: gray;
             }
@@ -273,11 +281,7 @@ footer {
 
 }
 
-@media #{$medium-up} {
-    footer {
-        height: 20em;
-    }
-}
+
 
 .responsive-youtube {
     float: none;

@@ -17,28 +17,6 @@
   </head>
   <body>
     {{ pages['_header'].content }}
-
-    <div class="off-canvas-wrap">
-      <div class="inner-wrap">
-        <a class="exit-off-canvas"></a>
-
-        <!-- <a class="menu button right-off-canvas-toggle"> -->
-        <!--   <span href="#" > -->
-        <!--       &#9776; -->
-        <!--   </span> -->
-        <!-- </a> -->
-
-        <aside class="right-off-canvas-menu">
-          <ul class="left">
-            <li><a href="{{ base_url}}/ohjeita" class="button">Ohjeita</a></li>
-            <li><a href="{{ base_url}}/kalenteri" class="button">Kalenteri</a></li>
-            <li><a href="{{ base_url}}/keli" class="button">Keli</a></li>
-            <li><a href="{{ base_url}}/Kiilarilistat" class="button">Kiilarilistat</a></li>
-            <li><a href="{{ base_url}}/webcam" class="button">Webcam</a></li>
-            <li><a href="http://fs.skydivejkl.fi" class="button">FS-kuvat</a></li>
-          </ul>
-        </aside>
-
     <div class="page-box">
     <div class="bgheader">
     <div class="row header">
@@ -77,17 +55,13 @@
   {% endif %}
   </div>
   <footer id="footer">
-    <div class="row">
-      <div class="large-6 columns">
+    <div class="row collapse">
         {{ pages['_footer'].content }}
-      </div>
     </div>
   </footer>
   </div>
 
 
-    </div>
-    </div>
 
     <script src="{{ theme_url }}/bower_components/foundation/js/foundation.js"></script>
     <script src="{{ theme_url }}/vendor/background-check.js"></script>

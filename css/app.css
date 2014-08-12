@@ -2735,11 +2735,7 @@ dialog[open] {
 
 @media print {
   dialog, .reveal-modal {
-    background: #fff !important; } 
-.links,#footer,.header,.bgheader { display: none;}
-.right-off-canvas-menu { display: none;}
-
-}
+    background: #fff !important; } }
 
 .side-nav {
   display: block;
@@ -4519,8 +4515,10 @@ body {
 
 .page-box {
   max-width: 1300px;
+  background-color: black;
   margin: 0 auto;
-  box-shadow: 0px 0px 20px black; }
+  box-shadow: 0px 0px 20px black;
+  height: 100%; }
 
 a {
   color: #3b5998; }
@@ -4675,34 +4673,32 @@ a.exit-off-canvas {
   opacity: 0.7; }
 
 footer {
-  height: 30em;
   width: 100% !important;
   padding-top: 4em;
+  padding-left: 2em;
+  padding-bottom: 4em;
   font-size: small;
   width: 100%;
   margin-right: 0px;
   margin-left: 0px;
   color: white;
   background-color: black; }
+  footer h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 18pt; }
+  footer .column {
+    padding-left: 1em !important;
+    margin-bottom: 2em; }
   footer p {
     margin: 0px; }
   footer ul {
-    list-style: none; }
-    footer ul li {
-      float: left; }
+    list-style: none;
+    margin: 0px; }
     footer ul li a {
-      font-family: 'Passion One', fantasy;
-      color: white;
-      padding: 0.3em;
-      padding-right: 0.5em;
-      text-transform: uppercase;
-      font-size: 1.3em; }
+      color: white; }
       footer ul li a:hover {
         color: gray; }
-
-@media only screen and (min-width:40.063em) {
-  footer {
-    height: 20em; } }
 
 .responsive-youtube {
   float: none;
@@ -4718,5 +4714,24 @@ footer {
     left: 0;
     width: 100%;
     height: 100%; }
+
+.footer-jump .fa {
+  font-size: 22pt !important;
+  position: relative;
+  top: 5px; }
+
+.flash {
+  animation: flash 0.5s ease-out;
+  animation-iteration-count: 1; }
+
+@keyframes flash {
+  0% {
+    background-color: black; }
+
+  50% {
+    background-color: white; }
+
+  100% {
+    background-color: black; } }
 
 /*# sourceMappingURL=app.css.map */

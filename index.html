@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href='http://fonts.googleapis.com/css?family=Passion+One|Signika+Negative:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" />
     <title>Skydive Jyväskylä - {{ meta.title }}</title>
 
@@ -35,7 +36,7 @@
         <li><a href="{{ base_url}}/lahjakortti" class="button">Lahjakortti</a></li>
         <li><a href="{{ base_url}}/in-english" class="button">In english</a></li>
         <!-- <li><a href="#" class="button right-off-canvas-toggle">...</a></li> -->
-        <li><a href="#footer" class="button" title="Alalaita">...</a></li>
+        <li><a href="#footer" class="button footer-jump" title="Alalaita"><i class="fa fa-angle-double-down"></i></a></li>
         </ul>
       </div>
     </div>
@@ -76,8 +77,16 @@
          images: '.bgheader'
        });
 
-
     </script>
     <script src="{{ theme_url }}/prefixfree.min.js"></script>
+    <script>
+      $(".footer-jump").on("click", function(){
+        var footer = $("footer");
+        footer.addClass("flash");
+        setTimeout(function(){
+          footer.removeClass("flash");
+        }, 600);
+      });
+    </script>
   </body>
 </html>

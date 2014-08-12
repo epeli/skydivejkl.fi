@@ -4656,8 +4656,6 @@ a.exit-off-canvas {
     margin-top: 1em;
     margin-bottom: 1em; }
   .content .row .button {
-    display: block;
-    width: 10em;
     background-color: #3b5998;
     color: white; }
     .content .row .button:hover {

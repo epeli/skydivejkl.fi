@@ -4732,4 +4732,25 @@ footer {
   100% {
     background-color: black; } }
 
+.syyskurssi {
+  position: relative;
+  top: -5px;
+  height: 80px;
+  float: right;
+  animation: 3s ease 0s normal none infinite swing;
+  transform-origin: center top; }
+  .syyskurssi:hover {
+    height: 250px;
+    animation: none; }
+
+@keyframes swing {
+  0% {
+    transform: rotate(5deg); }
+
+  50% {
+    transform: rotate(-5deg); }
+
+  100% {
+    transform: rotate(5deg); } }
+
 /*# sourceMappingURL=app.css.map */

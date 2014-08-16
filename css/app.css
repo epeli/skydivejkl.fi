@@ -4759,11 +4759,14 @@ footer {
 .print-date {
   font-style: italic;
   text-align: center;
-  text-size: 150%; }
+  text-size: 150%;
+  margin-bottom: 2em; }
 
 @media print {
   html, p, .button, ul, li {
-    line-height: 1; }
+    line-height: 1.2; }
+  body {
+    padding: 2em; }
   .print-only {
     display: block; }
   .bgheader, footer {

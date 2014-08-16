@@ -350,3 +350,24 @@ footer {
  }
 }
 
+.print-only {
+    display: none;
+}
+
+.print-date {
+    font-style: italic;
+    text-align: center;
+    text-size: 150%;
+}
+
+@media print {
+    html, p, .button, ul, li {
+        line-height: 1;
+    }
+    .print-only {
+        display: block;
+    }
+    .bgheader, footer {
+        display: none;
+    }
+}

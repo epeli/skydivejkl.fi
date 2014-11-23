@@ -326,7 +326,7 @@ footer {
 
 .syyskurssi {
     position: relative;
-    top: -5px;
+    top: 5px;
     height: 80px;
     float: right;
     animation: 3s ease 0s normal none infinite swing;
@@ -334,7 +334,6 @@ footer {
     &:hover {
         height: 250px;
         animation: none;
-
     }
 }
 
